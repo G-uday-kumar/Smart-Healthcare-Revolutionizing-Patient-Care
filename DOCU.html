@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Button Link</title>
+     <style>
+        .image-button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .image-button img {
+            display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+	width: 500px; /* Adjust the image width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+        }
+
+        .image-button:hover img {
+            opacity: 0.8; /* Optional: Slight opacity change on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="image-button" onclick="goToLink()">
+        <img src="C:\Users\G Uday Kumar\OneDrive\Desktop\hackathon 2\samplex\waw.jpg" alt="Go to Example.com">
+    </button>
+
+    <script>
+        function goToLink() {
+            window.location.href = "file:///C:/Users/G%20Uday%20Kumar/OneDrive/Desktop/hackathon%202/samplex/doctor.html.html";
+        }
+    </script>
+
+</body>
+</html>
